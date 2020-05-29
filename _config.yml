@@ -89,7 +89,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -110,6 +110,10 @@ tag_archive:
   path: /tags/
 
 # Customization
-repository: "username/repo-name"
+repository: "we-are-alluma/datavis-styleguide"
 breadcrumbs: true
 search_full_content: true
+## add observable notebooks 
+sass:
+    load_paths:
+        - node_modules
