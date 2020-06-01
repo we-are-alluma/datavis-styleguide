@@ -1,18 +1,18 @@
 body {
-    font-family: "Arial";
-    color: "#425563";
-  }
-  
-  .color-label {
-    font-size: x-large !important;
-    color: #425563;
-  }
-  
-  .color-hex-codes {
-    font-size: small !important;
-    color: #19267C;
-  }
-  
-  .observablehq {
-    padding: 0px 0px 40px 0px;
-  }
+  font-family: "Arial";
+  color: "#425563";
+}
+
+.color-label {
+  font-size: x-large !important;
+  color: #425563;
+}
+
+.color-hex-codes {
+  font-size: small !important;
+  color: #19267c;
+}
+
+.observablehq {
+  padding: 0px 0px 40px 0px;
+}
