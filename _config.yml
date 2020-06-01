@@ -113,7 +113,3 @@ tag_archive:
 repository: "we-are-alluma/datavis-styleguide"
 breadcrumbs: true
 search_full_content: true
-## add observable notebooks 
-sass:
-    load_paths:
-        - node_modules
