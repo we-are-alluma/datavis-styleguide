@@ -5,6 +5,8 @@ categories:
 tags:
   - charts
 ---
+<style src="{{ site.url }}/assets/css/chart-examples.css"></style>
+
 
 <div id="observablehq-51a86210">
   <div class="observablehq-line_chart"></div>
