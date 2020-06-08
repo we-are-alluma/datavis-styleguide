@@ -5,6 +5,8 @@ categories:
 tags:
   - charts
   - examples
+sidebar:
+  nav: "docs"
 ---
 <style src="{{ site.url }}/assets/css/chart-examples.css"></style>
 
