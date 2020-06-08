@@ -5,8 +5,8 @@ categories:
 tags:
   - charts
   - examples
-nav:
-  - docs
+sidebar:
+  nav: "docs"
 ---
 
 # TODO
