@@ -26,9 +26,12 @@ docs:
         url: /reference/colors/
       - title: "Likert scales"
         url: /reference/likert-scales/
-      - title: "Examples: Line Chart"
-        url: /reference/line-chart/
 
+
+  - title: Examples
+    children:
+      - title: "Line chart"
+        url: /example/line-chart/
   # - title: Content
   #   children:
   #     - title: "Working with Posts"
