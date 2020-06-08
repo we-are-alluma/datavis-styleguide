@@ -10,7 +10,8 @@ nav:
 ---
 
 # TODO
-- Use 3rd and 5th color of shade scales
+- Add intro text
+- Add "when to use each"
 
 ## Red to Blue
 
