@@ -4,6 +4,7 @@ categories:
   - Reference
 tags:
   - charts
+  - examples
 ---
 <style src="{{ site.url }}/assets/css/chart-examples.css"></style>
 
