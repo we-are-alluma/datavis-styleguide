@@ -1,7 +1,7 @@
 ---
 title: "Examples: Line Chart"
 categories:
-  - example
+  - Example
 tags:
   - charts
   - examples
