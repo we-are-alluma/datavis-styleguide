@@ -1,5 +1,5 @@
 ---
-title: "Examples: Survey data"
+title: "Likert scales"
 categories:
   - Reference
 tags:
