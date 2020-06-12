@@ -29,20 +29,29 @@ sidebar:
 }
 </style>
 
-# TODO
-
-- Divergent stacked bar chart in Excel
-- a note on using alluma green
+We use surveys to measure people's attitudes all the time and one common way to code answers is using a **Rating scale** or **Likert scale**. These are used to allow survey-takers to express how much they agree or disagree with a statement (`strongly disagree - disagree - undecided - agree - strongly agree`). 
 
 
-There are many different ways to visualize survey data and just like with most tasks in data visualization, there is not one right answer. 
+There are variations to measure **frequency** (`never - rarely - sometimes - often - always`), importance (`unimportant - slightly important - moderately important - important - very important`), quality (`very poor - poor - fair - good - excellent`), among others.
 
-In this guide we will go through a few ways to visualize what is known as _likert scale data_ and what each of them highlights or downplays. T
+These are, what is known as, **categorical** scales - each answer is its own discrete unit, you cannot answer 'somewhere between slightly important and moderately important', you must choose one. These are also **ordinal** scales - the order matters, 'often' is _more_ than 'rarely' and 'slightly important' is _less_ than 'moderately important' in their respective scales. 
+
+
+Just like with most tasks in data visualization, there are many different ways to visualize this data and there is not one right answer. 
+
+In this guide we will go through a few ways to visualize **rating-scale** survey answers.
 
 # What the data looks like
 
+First, let's think about how the data looks like
+
 <iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="chart" id="datawrapper-chart-pO9L9" src="https://datawrapper.dwcdn.net/pO9L9/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="267"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
+
+This is an agreggated table of survey answers as you might get from the survey service of your choice. 
+
+**💡Note**: If you received the raw data or individual-level answers, you are going to have to aggregate it yourself. This is easy with pivot tables in excel or using any other data analysis software you prefer. For examples using excel, R and python you can visit the [tidy data section](../../reference/tidy-data) of this style guide.
+{: .notice--info }
 
 # Color schemes
 
@@ -114,6 +123,7 @@ Here is an excel workbook to get you started with diverging stacked bar charts: 
 - [Wikipedia: Likert scale - Wikipedia](https://en.wikipedia.org/wiki/Likert_scale)
 - [Seven different ways to display Likert scale data - Nightingale](https://medium.com/nightingale/seven-different-ways-to-display-likert-scale-data-d0c1c9a9ad59?source=friends_link&sk=60cb93604b71ecc8820cc785ed1afd1a)
 - [The case against diverging bar charts - Datawrapper](https://blog.datawrapper.de/divergingbars/)
+- [Likert scale | Simple Psychology](https://www.simplypsychology.org/likert-scale.html)
 
 
 <!-- Observable HQ -->
