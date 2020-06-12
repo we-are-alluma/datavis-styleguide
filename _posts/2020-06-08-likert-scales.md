@@ -43,17 +43,24 @@ In this guide we will go through a few ways to visualize **rating-scale** survey
 
 # What the data looks like
 
-First, let's think about how the data looks like
+First, let's think about how the data looks like. This is from [FiveThirtyEight's Oxford comma survey](https://fivethirtyeight.com/features/elitist-superfluous-or-popular-we-polled-americans-on-the-oxford-comma/).
 
-<iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="chart" id="datawrapper-chart-pO9L9" src="https://datawrapper.dwcdn.net/pO9L9/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="267"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+<iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="chart" id="datawrapper-chart-pO9L9" src="https://datawrapper.dwcdn.net/pO9L9/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="267"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
 
-This is an agreggated table of survey answers as you might get from the survey service of your choice. 
+This is an agreggated table of answers as you might get from the survey service of your choice. 
 
 **💡Note**: If you received the raw data or individual-level answers, you are going to have to aggregate it yourself. This is easy with pivot tables in excel or using any other data analysis software you prefer. For examples using excel, R and python you can visit the [tidy data section](../../reference/tidy-data) of this style guide.
 {: .notice--info }
 
+**What can you tell from this table so far?**
+
+1. There are 4 columns/answers - not 5. This means our scale skips the `neutral/undecided` scale point. Is it because people did not answer the question? or because no one actually feels indifferent about Oxford commas? (Impossible!)
+2. 
+
 # Color schemes
+
+Before diving in further, it is useful to think about the colors we will be choosing for our visualization. Looking at our data 
 
 Diverging color schemes to illustrate both extremes of the spectrum are opposites.
 
