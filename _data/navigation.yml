@@ -9,45 +9,32 @@ main:
     url: /about/
 
 docs:
-  # - title: Getting Started
-  #   children:
-  #     - title: "Quick-Start Guide"
-  #       url: /docs/quick-start-guide/
-  #     - title: "Structure"
-  #       url: /docs/structure/
-  #     - title: "Installation"
-  #       url: /docs/installation/
-  #     - title: "Upgrading"
-  #       url: /docs/upgrading/
-
   - title: Reference
     children:
       - title: "Color scales"
         url: /reference/colors/
-      - title: "Likert scales"
-        url: /reference/likert-scales/
+      - title: "Typography"
+        url: /reference/typography/
+      - title: "Chart parts"
+        url: /reference/chart-parts/
+      - title: "Tidy data"
+        url: /reference/tidy-data/
 
 
   - title: Examples
     children:
       - title: "Line chart"
         url: /example/line-chart/
-  # - title: Content
-  #   children:
-  #     - title: "Working with Posts"
-  #       url: /docs/posts/
-  #     - title: "Working with Pages"
-  #       url: /docs/pages/
-  #     - title: "Working with Collections"
-  #       url: /docs/collections/
-  #     - title: "Helpers"
-  #       url: /docs/helpers/
-  #     - title: "Utility Classes"
-  #       url: /docs/utility-classes/
+      - title: "Bar chart"
+        url: /example/bar-chart/
+      - title: "Scatter plot"
+        url: /example/scatter-plot/
+      - title: "Dumbell chart"
+        url: /example/dumbell-chart/
+      - title: "Maps"
+        url: /example/maps/
 
-  # - title: Extras
-  #   children:
-  #     - title: "Stylesheets"
-  #       url: /docs/stylesheets/
-  #     - title: "JavaScript"
-  #       url: /docs/javascript/
+  - title: Case studies
+    children:
+      - title: "Likert Scales"
+        url: /case-study/likert-scales/
