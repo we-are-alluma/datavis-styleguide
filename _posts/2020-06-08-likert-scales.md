@@ -85,7 +85,7 @@ emphasizes the largest share of the total (i.e. "the biggest share of those who 
 
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'bar-chart-1-red')">Red</button>
+  <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'bar-chart-1-red')">Red</button>
   <button class="tablinks" onclick="openCity(event, 'bar-chart-1-yellow')">Yellow</button>
 </div>
 
