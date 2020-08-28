@@ -77,9 +77,14 @@ The color **red** also tends to be seen as a negative in Western societies espec
 
 
 # Examples
+
+Let's go over some ways we could visualize this dataset. Remember, there is not a right answer here. Data can be visualized in many ways and each of them emphasizes and downplays certain aspects of your data. What you want to tell with your data is your choice but please remember to be responsible and honest.
+
 ## Bar charts
 
-emphasizes the largest share of the total (i.e. "the biggest share of those who make $150,000+ a year are those who care 'some' about the use of the word 'data' as a plural or singular noun"). This is not particularly useful, you're highlighting one of the two possible positive answers. It is not clear if the sum of both "Some" and "A lot" is larger than the sum of "Not at all" and "Not much". 
+The simplest chart we can create with our data as it is is a bar chart. In this case, these bar charts emphasize the largest share of the total (i.e. "the biggest share of those who make $150,000+ a year are those who care 'some' about the use of the word 'data' as a plural or singular noun"). 
+
+This is not particularly useful, as we are highlighting one of the two possible positive answers ('some' and 'a lot'). It is not clear if the sum of both "Some" and "A lot" is larger than the sum of "Not at all" and "Not much". 
 
 <!-- Tab links -->
 <div class="tab">
@@ -98,7 +103,7 @@ emphasizes the largest share of the total (i.e. "the biggest share of those who 
   </script>
 </div>
 
-This type of chart could be useful if there is one category that is clearly much larger than the other three for most groups. 
+This type of chart could be useful if there is one category that is clearly much larger than the other three for most groups. Take a look:
 <!-- Tab links -->
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'bar-chart-2-red')">Red</button>
@@ -116,7 +121,7 @@ This type of chart could be useful if there is one category that is clearly much
   </script>
 </div>
 
-This logic is true for [horizontal bar charts too](#horizontal-bar-charts)
+This logic is true for [horizontal bar charts too](#horizontal-bar-charts).
 
 ## Pie charts
 Part of whole. Mostly good when it's clean easy-to-visualize slices (10%, 25%, 33%, etc)
