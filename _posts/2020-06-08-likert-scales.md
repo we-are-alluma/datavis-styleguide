@@ -32,9 +32,9 @@ sidebar:
 We use surveys to measure people's attitudes all the time and one common way to code answers is using a **Rating scale** or **Likert scale**. These are used to allow survey-takers to express how much they agree or disagree with a statement (`strongly disagree - disagree - undecided - agree - strongly agree`). 
 
 
-There are variations to measure **frequency** (`never - rarely - sometimes - often - always`), importance (`unimportant - slightly important - moderately important - important - very important`), quality (`very poor - poor - fair - good - excellent`), among others.
+There are variations to measure **frequency** (`never - rarely - sometimes - often - always`), importance (`unimportant - slightly important - moderately important - important - very important`), and quality (`very poor - poor - fair - good - excellent`), among others.
 
-These are, what is known as, **categorical** scales - each answer is its own discrete unit, you cannot answer 'somewhere between slightly important and moderately important', you must choose one. These are also **ordinal** scales - the order matters, 'often' is _more_ than 'rarely' and 'slightly important' is _less_ than 'moderately important' in their respective scales. 
+These are, what is known as, **categorical** scales - each answer is its own discrete unit, you cannot answer 'somewhere between slightly important and moderately important', you must choose one. These are also **ordinal** scales - the order matters; 'often' is _more_ than 'rarely' and 'slightly important' is _less_ than 'moderately important' in their respective scales. 
 
 
 Just like with most tasks in data visualization, there are many different ways to visualize this data and there is not one right answer. 
@@ -55,20 +55,18 @@ This is an agreggated table of answers as you might get from the survey service 
 
 **What can you tell from this table so far?**
 
-1. There are 4 columns/answers - not 5. This means our scale skips the `neutral/undecided` scale point. Is it because people did not answer the question? or because no one actually feels indifferent about Oxford commas? (Impossible!)
-2. 
+1. There are 4 columns/answers - not 5. This means our scale skips the `neutral/undecided` scale point. Is it because people did not answer the question or because no one actually feels indifferent about Oxford commas? (Impossible!)
+2. This table shows total counts - not shares. This means we need to do some more data cleaning ourselves! 
+
+What else can you derive from this table?
 
 # Color schemes
 
-Before diving in further, it is useful to think about the colors we will be choosing for our visualization. Looking at our data 
-
-Diverging color schemes to illustrate both extremes of the spectrum are opposites.
+Before diving in further, it is useful to think about the colors we will be choosing for our visualization. Looking at our data categories, we know the answers span from one extreme to the other (`Not at all` to `A lot`). These are opposites and that means we need to use what is known as a _diverging_ color scheme. Diverging color schemes are composed of three colors: one for each end and a neutral color. Gray or white is a common choice for the neutral color. Each of the other two colors sit at the end of the scale and we use lighter and lighter shades of those colors as we approach the center (neutral). 
 
 Keep in mind colors have connotations: when you see something go from red to blue most people assume it's going from bad to good. Having the "positive" end of the spectrum using Red and the negative using Blue could be misleading. 
 
-Be conscious that **red** is usually seen as a negative, if you don't want that connotation for your chart use another color like yellow
-
-Try using other colors like our yellow to blue scale instead.
+The color **red** also tends to be seen as a negative in Western societies especially when we are dealing with numbers. If you prefer not to use **red**, try using other colors like our yellow to blue scale instead.
 
 <div id="observablehq-30f8f623">
   <div class="observablehq-likert_rdbu"></div>
