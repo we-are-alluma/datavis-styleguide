@@ -124,9 +124,9 @@ This type of chart could be useful if there is one category that is clearly much
 This logic is true for [horizontal bar charts too](#horizontal-bar-charts).
 
 ## Pie charts
-Pie charts emphasize the idea of a section _being part of a whole_. In this case they also facilitate grouping sections in our minds. We can easily see whether the reds or the blues are larger than the other. Pie charts sections, however, can be hard to interpret if they are not 
+Pie charts emphasize the idea of a section _being part of a whole_. In this case they also facilitate grouping sections in our minds. We can easily see whether the reds or the blues are larger than the other. 
 
-Part of whole. Mostly good when it's clean easy-to-visualize slices (10%, 25%, 33%, etc)
+Pie charts sections, however, can be hard to interpret if there are too many sections or if these sections are not common fractions like 1/3, 1/2, 1/4, etc. It's easy to tell when a section is one quarter or 25% of a pie. It's harder to tell when it is 17%. 
 
 <!-- Tab links -->
 <div class="tab">
