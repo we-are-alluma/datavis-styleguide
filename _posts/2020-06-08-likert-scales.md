@@ -147,6 +147,8 @@ Pie charts sections, however, can be hard to interpret if there are too many sec
 
 ## Diverging stacked bars
 
+Another common way to visualize this type of data is using diverging stacked bars. Instead of placing each answer as a bar next to each other we essentially create two bar charts next to each other going in opposite directions centered at 0%. Here is [an example from Pew Research Center](https://www.pewresearch.org/fact-tank/2020/02/03/democrats-on-twitter-more-liberal-less-focused-on-compromise-than-those-not-on-the-platform/)
+
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'diverging-stacked-chart-red')">Red</button>
   <button class="tablinks" onclick="openCity(event, 'diverging-stacked-chart-yellow')">Yellow</button>
@@ -163,7 +165,15 @@ Pie charts sections, however, can be hard to interpret if there are too many sec
 <img src="{{ 'assets/images/diverging-stacked-bars-yebu.png' | relative_url }}">
 </div>
 
-Here is an excel workbook to get you started with diverging stacked bar charts: [link to workbook]({{ 'assets/resources/diverging-bar-charts.xlsx' | relative_url }})
+This takes care of our regular bar chart problem where you could not tell right away if the aggregate of "blues" was greater than the aggregate of the "reds" (or "yellows" if you are using our other scale). Kind of. 
+
+Diverging bar charts group similar answers together and that is helpful but if the aggregates are not significantly different it might be hard to tell which side of your chart is larger. There are pros and cons to everything.
+
+Another disadvantage diverging bar charts have has to do with the middle value (usually `"neutral"`). Our data in this case happens to not have any "neutra" or "undecided" answers so we can start each of our sides at 0% but what would we do if we did? That would be up to you. Many data journalists have picked up the practice of creating a separate bar chart to display only those "neutral"/"undecided" values so as to not disrupt the diverging bar chart. 
+
+![Datawrapper example of diverging bar charts](https://blog.datawrapper.de/img/full-180306_divergent8.png)
+
+If you decide you want to try to use this type of charts we have included an excel workbook you can use as a start: [link to workbook]({{ 'assets/resources/diverging-bar-charts.xlsx' | relative_url }})
 
 ## Stacked bar charts
 
