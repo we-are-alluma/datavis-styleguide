@@ -177,6 +177,9 @@ If you decide you want to try to use this type of charts we have included an exc
 
 ## Stacked bar charts
 
+Our last example is stacked bar charts. Stacked bar charts are, as the name suggests, charts that stack bars on top of (or next to in the case of horizontal charts) each other. Instead of each group (in this case our income groups) having 5 bars displaying the share of each possible answer they have one bar going from 0 too 100% with four or five sections differentiated by color. 
+
+
 <!-- Tab links -->
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'stacked-bar-chart-red')">Red</button>
@@ -193,6 +196,9 @@ If you decide you want to try to use this type of charts we have included an exc
   <iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="Stacked Bars" id="datawrapper-chart-KTlJ2" src="https://datawrapper.dwcdn.net/KTlJ2/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="291"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
 </div>
+
+This has the advantage of making our chart more compact. It also, like pie charts, emphasize each section/answer is a "part of a whole". It is also easier to tell "which part is bigger" (blues vs red/yellows) if you add a label at the 50% mark. If either section crosses said mark you know it holds "the majority". 
+
 
 # Further reading
 
