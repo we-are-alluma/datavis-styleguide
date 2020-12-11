@@ -1,5 +1,4 @@
-name: Build HTML and Deploy to GH-PAGES
-on:
+name: Build HTML and Deploy to gh-pages
   schedule:
     - cron: '0 0 * * *'
   push:
