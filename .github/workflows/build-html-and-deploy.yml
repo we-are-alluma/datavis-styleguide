@@ -24,18 +24,18 @@ jobs:
           environment-file: environment.yml
           activate-environment: qe-mini-example
 
-      - name: Install jupyter_book
-        shell: bash -l {0}
-        run: pip install git+https://github.com/ExecutableBookProject/jupyter-book.git@master
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
 
-      - name: Build QuantEcon Mini Example
-        shell: bash -l {0}
-        run: jb build mini_book/
+      # Build the book
+      - name: Build the book
+        run: |
+          jupyter-book build .
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      # Push the book's HTML to github-pages
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.6.1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: mini_book/_build/html
-          CLEAN: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_build/html
