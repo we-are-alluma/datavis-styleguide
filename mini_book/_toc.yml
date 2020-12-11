@@ -1,0 +1,22 @@
+# - file: README
+- file: docs/index
+  
+- part: Reference
+  chapters:
+    - file: docs/color-scales
+    - file: docs/typography
+    - file: docs/chart-parts
+    - file: docs/tidy-data
+    - file: docs/cleaning-data
+
+- part: Examples
+  chapters:
+    - file: docs/line-chart
+    - file: docs/bar-chart
+    - file: docs/scatterplot
+    - file: docs/dumbell-chart
+    - file: docs/maps
+
+- part: Case Studies
+  chapters:
+    - file: docs/likert-scales
