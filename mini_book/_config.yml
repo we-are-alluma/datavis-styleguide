@@ -3,6 +3,7 @@
 title : Alluma Data Visualization Style Guide
 author: Alluma Data Team
 logo: 'data-program-icon.png'
+favicon: 'data-program-icon.png'
 
 # Information about where the book exists on the web
 description: >-
@@ -17,6 +18,9 @@ execute:
 # HTML-specific settings
 html:
   home_page_in_navbar         : false
+  use_repository_button       : true
+  use_edit_page_button        : true
+  baseurl                     : "https://we-are-alluma.github.io/datavis-styleguide/"
 
 # #######################################################################################
 # Interact link settings
