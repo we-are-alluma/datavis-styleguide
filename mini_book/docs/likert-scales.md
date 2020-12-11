@@ -20,6 +20,10 @@
 }
 </style>
 
+```{warning}
+This page may take a long time to load. We're working on it.
+```
+
 We use surveys to measure people's attitudes all the time and one common way to code answers is using a **Rating scale** or **Likert scale**. These are used to allow survey-takers to express how much they agree or disagree with a statement (`strongly disagree - disagree - undecided - agree - strongly agree`). 
 
 
