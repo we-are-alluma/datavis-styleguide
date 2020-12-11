@@ -1,13 +1,15 @@
 name: qe-mini-example
 channels:
-  - default
+  - conda-forge
 dependencies:
   - python=3.8
   - sphinx
   - pip
   - pandas
-  - matplotlib
+  - altair
+  - jupyterlab
   - pip:
     - quantecon
     - jupyter-book
     - sphinx-inline-tabs
+    - vega_datasets
