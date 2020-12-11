@@ -1,4 +1,5 @@
-name: Build HTML and Deploy to gh-pages
+name: Build HTML and Deploy to GH-PAGES
+on:
   schedule:
     - cron: '0 0 * * *'
   push:
@@ -27,7 +28,7 @@ jobs:
         shell: bash -l {0}
         run: pip install git+https://github.com/ExecutableBookProject/jupyter-book.git@master
 
-      - name: Build book
+      - name: Build book 
         shell: bash -l {0}
         run: jb build mini_book/
 
