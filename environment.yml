@@ -1,0 +1,13 @@
+name: qe-mini-example
+channels:
+  - default
+dependencies:
+  - python=3.8
+  - sphinx
+  - pip
+  - pandas
+  - matplotlib
+  - pip:
+    - quantecon
+    - jupyter-book
+    - sphinx-inline-tabs

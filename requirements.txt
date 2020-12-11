@@ -1,0 +1,6 @@
+sphinx
+pandas
+matplotlib
+quantecon
+jupyter-book
+sphinx-inline-tabs

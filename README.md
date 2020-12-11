@@ -1,34 +1,41 @@
+# quantecon-mini-example
 
-# TO DO
-- Customize SideBar navigation: https://mmistakes.github.io/minimal-mistakes/docs/layouts/#custom-sidebar-content
+A short example showing how to write a lecture series using Jupyter Book 2.0.
 
+## Creating an Conda Environment
 
-***
+The conda environment is provided as `environment.yml`. This environment is used for all testing by Github Actions and can be setup by:
 
-# Minimal Mistakes remote theme starter
+1. `conda env create -f environment.yml`
+2. `conda activate qe-mini-example`
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+## Building a Jupyter Book
 
-Contains basic configuration to get you a site with:
+Run the following command in your terminal:
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+```bash
+jb build mini_book/
+```
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+If you would like to work with a clean build, you can empty the build folder by running:
 
----
+```bash
+jb clean mini_book/
+```
 
-## Troubleshooting
+If jupyter execution is cached, this command will not delete the cached folder. 
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+To remove the build folder (including `cached` executables), you can run:
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+```bash
+jb clean --all mini_book/
+```
+
+## Publishing this Jupyter Book
+
+This repository is published automatically to `gh-pages` upon `push` to the `master` branch.
+
+## Notes
+
+This repository is used as a test case for [jupyter-book](https://github.com/executablebooks/jupyter-book) and 
+a `requirements.txt` file is provided to support this `CI` application.
