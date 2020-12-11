@@ -2,7 +2,7 @@
 
 This is a living document created by the Data Team at [Alluma](https://alluma.org/)
 
-This is an open-source project and can be found on [GitHub.com/we-are-alluma/datavis-styleguide](github.com/we-are-alluma/datavis-styleguide)
+This is an open-source project and can be found on [GitHub.com/we-are-alluma/datavis-styleguide](https://github.com/we-are-alluma/datavis-styleguide)
 
 ```{tip}
 You hover the GitHub icon and use the `Suggest edit` button atop of this page 
