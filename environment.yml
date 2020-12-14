@@ -1,4 +1,4 @@
-name: qe-mini-example
+name: styleguide
 channels:
   - conda-forge
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
   - pandas
   - altair
   - jupyterlab
+  - r-base
+  - r-tidyverse
   - pip:
     - quantecon
     - jupyter-book
