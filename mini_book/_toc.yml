@@ -14,7 +14,7 @@
     - file: docs/line-chart
     - file: docs/bar-chart
     - file: docs/scatterplot
-    - file: docs/dumbell-chart
+    - file: docs/dumbbell-chart
     - file: docs/maps
 
 - part: Case Studies
