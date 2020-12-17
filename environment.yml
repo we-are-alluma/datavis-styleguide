@@ -12,6 +12,7 @@ dependencies:
   - r-tidyverse
   - r-irkernel
   - r-ggalt
+  - r-devtools
   - pip:
     - quantecon
     - jupyter-book
