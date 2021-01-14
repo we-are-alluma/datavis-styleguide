@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dumbell Charts &#8212; Alluma Data Visualization Style Guide</title>
+    <title>&lt;no title&gt; &#8212; Alluma Data Visualization Style Guide</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -58,7 +58,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Maps" href="maps.html" />
-    <link rel="prev" title="Scatterplots" href="scatterplot.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="scatterplot.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -67,8 +67,8 @@
 <!-- Opengraph tags -->
 <meta property="og:url"         content="https://we-are-alluma.github.io/datavis-styleguide/docs/dumbbell-chart.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Dumbell Charts" />
-<meta property="og:description" content="Dumbell Charts  When to use a dumbell chart  To show the difference between two groups across one variable.  To show the difference between two time periods acr" />
+<meta property="og:title"       content="&lt;no title&gt;" />
+<meta property="og:description" content="" />
 <meta property="og:image"       content="https://we-are-alluma.github.io/datavis-styleguide/_static/data-program-icon.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -114,18 +114,8 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chart-parts.html">
-   Chart parts (work in progress)
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="tidy-data.html">
    Tidy data (work in progress)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="cleaning-data.html">
-   Cleaning data (work in progress)
   </a>
  </li>
 </ul>
@@ -134,27 +124,7 @@
   Examples
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="line-chart.html">
-   Line Chart
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="bar-chart.html">
-   Bar and Column Charts
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="scatterplot.html">
-   Scatterplots
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Dumbell Charts
-  </a>
- </li>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="maps.html">
    Maps
@@ -247,23 +217,6 @@
 
         <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/we-are-alluma/datavis-styleguide/master?urlpath=tree/mini_book/docs/dumbbell-chart.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
     </div>
 
     <!-- Table of contents -->
@@ -273,17 +226,7 @@
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#when-to-use-a-dumbell-chart">
-   When to use a dumbell chart
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#style-tips">
-   Style tips
-  </a>
- </li>
+            <ul class="simple nav section-nav flex-column">
 </ul>
 
         </nav>
@@ -295,67 +238,7 @@
         
               <div>
                 
-  <div class="section" id="dumbell-charts">
-<h1>Dumbell Charts<a class="headerlink" href="#dumbell-charts" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="when-to-use-a-dumbell-chart">
-<h2>When to use a dumbell chart<a class="headerlink" href="#when-to-use-a-dumbell-chart" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>To show the difference between two groups across one variable.</p></li>
-<li><p>To show the difference between two time periods across one variable.</p></li>
-</ul>
-</div>
-<div class="section" id="style-tips">
-<h2>Style tips<a class="headerlink" href="#style-tips" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>With dumbbell charts you are highlighting two points for each group or time period (the usually cicles) but you’re emphasizing the difference <em>between</em> them (illustrated by the bar or line connecting both circles. Use a lighter color (light gray) or turned the transparency up to emphasize the visual hierarchy.</p></li>
-</ul>
-<div class="cell tag_remove-output tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1">#This line of code installs the pacman page if you do not have it installed - if you do, it simply loads the package</span>
-<span class="nf">if</span><span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">pacman</span><span class="p">))</span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;pacman&quot;</span><span class="p">)</span>
-<span class="n">devtools</span><span class="o">::</span><span class="nf">install_github</span><span class="p">(</span><span class="s">&quot;bbc/bbplot&quot;</span><span class="p">)</span>
-<span class="n">pacman</span><span class="o">::</span><span class="nf">p_load</span><span class="p">(</span><span class="s">&#39;dplyr&#39;</span><span class="p">,</span> <span class="s">&#39;tidyr&#39;</span><span class="p">,</span> <span class="s">&#39;gapminder&#39;</span><span class="p">,</span>
-               <span class="s">&#39;ggplot2&#39;</span><span class="p">,</span>  <span class="s">&#39;ggalt&#39;</span><span class="p">,</span>
-               <span class="s">&#39;forcats&#39;</span><span class="p">,</span> <span class="s">&#39;R.utils&#39;</span><span class="p">,</span> <span class="s">&#39;png&#39;</span><span class="p">,</span> 
-               <span class="s">&#39;grid&#39;</span><span class="p">,</span> <span class="s">&#39;ggpubr&#39;</span><span class="p">,</span> <span class="s">&#39;scales&#39;</span><span class="p">,</span>
-               <span class="s">&#39;bbplot&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="s">&quot;ggalt&quot;</span><span class="p">)</span>
-<span class="nf">library</span><span class="p">(</span><span class="s">&quot;tidyr&quot;</span><span class="p">)</span>
-
-<span class="c1">#Prepare data</span>
-<span class="n">dumbbell_df</span> <span class="o">&lt;-</span> <span class="n">gapminder</span> <span class="o">%&gt;%</span>
-  <span class="nf">filter</span><span class="p">(</span><span class="n">year</span> <span class="o">==</span> <span class="m">1967</span> <span class="o">|</span> <span class="n">year</span> <span class="o">==</span> <span class="m">2007</span><span class="p">)</span> <span class="o">%&gt;%</span>
-  <span class="nf">select</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">lifeExp</span><span class="p">)</span> <span class="o">%&gt;%</span>
-  <span class="nf">spread</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">lifeExp</span><span class="p">)</span> <span class="o">%&gt;%</span>
-  <span class="nf">mutate</span><span class="p">(</span><span class="n">gap</span> <span class="o">=</span> <span class="n">`2007`</span> <span class="o">-</span> <span class="n">`1967`</span><span class="p">)</span> <span class="o">%&gt;%</span>
-  <span class="nf">arrange</span><span class="p">(</span><span class="nf">desc</span><span class="p">(</span><span class="n">gap</span><span class="p">))</span> <span class="o">%&gt;%</span>
-  <span class="nf">head</span><span class="p">(</span><span class="m">10</span><span class="p">)</span>
-
-<span class="c1">#Make plot</span>
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">dumbbell_df</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">`1967`</span><span class="p">,</span> <span class="n">xend</span> <span class="o">=</span> <span class="n">`2007`</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="nf">reorder</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">gap</span><span class="p">),</span> <span class="n">group</span> <span class="o">=</span> <span class="n">country</span><span class="p">))</span> <span class="o">+</span> 
-  <span class="nf">geom_dumbbell</span><span class="p">(</span><span class="n">colour</span> <span class="o">=</span> <span class="s">&quot;#dddddd&quot;</span><span class="p">,</span>
-                <span class="n">size</span> <span class="o">=</span> <span class="m">3</span><span class="p">,</span>
-                <span class="n">colour_x</span> <span class="o">=</span> <span class="s">&quot;#FAAB18&quot;</span><span class="p">,</span>
-                <span class="n">colour_xend</span> <span class="o">=</span> <span class="s">&quot;#1380A1&quot;</span><span class="p">)</span> <span class="o">+</span>
-  <span class="nf">bbc_style</span><span class="p">()</span> <span class="o">+</span> 
-  <span class="nf">labs</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">&quot;We&#39;re living longer&quot;</span><span class="p">,</span>
-       <span class="n">subtitle</span><span class="o">=</span><span class="s">&quot;Biggest life expectancy rise, 1967-2007&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/dumbbell-chart_2_0.png" src="../_images/dumbbell-chart_2_0.png" />
-</div>
-</div>
-</div>
-</div>
-
+  
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -365,16 +248,16 @@
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "r"
+            mode: "python"
         },
         kernelOptions: {
-            kernelName: "ir",
+            kernelName: "python3",
             path: "./docs"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'ir'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -384,7 +267,7 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="scatterplot.html" title="previous page">Scatterplots</a>
+    <a class='left-prev' id="prev-link" href="scatterplot.html" title="previous page">&lt;no title&gt;</a>
     <a class='right-next' id="next-link" href="maps.html" title="next page">Maps</a>
 
     </div>
