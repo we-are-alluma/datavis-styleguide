@@ -1,7 +1,5 @@
 name: Build PDF
 on:
-  schedule:
-    - cron: '0 0 * * *'
   push:
     branches:
       - master
@@ -40,7 +38,7 @@ jobs:
           miniconda-version: 'latest'
           python-version: 3.8
           environment-file: environment.yml
-          activate-environment: qe-mini-example
+          activate-environment: styleguide
 
       - name: Install jupyter_book
         shell: bash -l {0}
