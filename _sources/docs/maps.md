@@ -1,4 +1,9 @@
-# Maps
+# Maps (work in progress)
+
+```{warning} 
+Work in progress. This section is still being worked on.
+```
+
 ## Should it even be a map?
 
 Just because you've got geographic data, doesn't mean that you have to make a map. Many times, there are more efficient storyforms that will get your point across more clearly. If your data shows a very clear geographic trend or if the absolute location of a place or event matters, maps might be the best approach, but sometimes the reflexive impulse to map the data can make you forget that showing the data in another form might answer other—and sometimes more important—questions. Consider using other graphic types when the interesting patterns are not geographic patterns, or when the geographic data is more effective for analysis than for presentation. Many times, a simple bar chart, column chart, scatterplot or table are more effective at translating your research to a reader.
