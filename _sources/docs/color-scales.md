@@ -2,6 +2,15 @@
 
 <style src="{{ site.url }}/assets/css/colors-notebook.css"></style>
 
+There are three fundamental use cases for color in data visualizations: 
+(i) we can use color to distinguish groups of data from each other; 
+(ii) we can use color to represent data values; and 
+(iii) we can use color to highlight. The types of colors we use and the way in which we use them are quite different for these three cases.
+
+```{tip}
+Clicking the scale will copy its hex codes to your clipboard. 
+This means you can click the scale you want and CTRL+V paste the list of values where you need them.
+```
 
 <div id="observablehq-30f8f623">
   <div class="observablehq-main_colors"></div>
