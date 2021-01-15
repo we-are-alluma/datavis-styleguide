@@ -14,7 +14,7 @@ dependencies:
   - r-ggalt
   - r-devtools
   - pip:
-    - quantecon
+    - nbformat
     - jupyter-book
     - sphinx-inline-tabs
     - vega_datasets
