@@ -20,6 +20,7 @@ html:
   home_page_in_navbar         : false
   use_repository_button       : true
   use_edit_page_button        : true
+  use_issues_button           : true
   baseurl                     : "https://we-are-alluma.github.io/datavis-styleguide/"
 
 # #######################################################################################
