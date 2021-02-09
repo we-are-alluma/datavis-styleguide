@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maps (work in progress) &#8212; Alluma Data Visualization Style Guide</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -212,9 +212,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/docs/maps.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/docs/maps.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -235,7 +235,7 @@
             href="https://github.com/we-are-alluma/datavis-styleguide/issues/new?title=Issue%20on%20page%20%2Fdocs/maps.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/we-are-alluma/datavis-styleguide/edit/master/mini_book/docs/maps.md"><button
+        <a class="edit-button" href="https://github.com/we-are-alluma/datavis-styleguide/edit/master/mini_book/docs/maps.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -249,6 +249,23 @@
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/we-are-alluma/datavis-styleguide/master?urlpath=tree/mini_book/docs/maps.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
 
     </div>
 
@@ -290,6 +307,81 @@ Map Projections</p>
 <p>Depending on the purpose and content, maps should use different projections. US maps for print publication, or use in reports should use the Albers Equal Area projection. Simple interactive county- or state-level maps also use the Albers projection. Zoomable tile-based interactive maps use the Mercator projection.
 Map Colors</p>
 <p>Maps should follow the same basic rules as other graphics when it comes to colors. Choropleth maps, or maps that show the magnitude of a variable, should normally use the blue sequential ramp.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">from</span> <span class="nn">vega_datasets</span> <span class="kn">import</span> <span class="n">data</span>
+
+<span class="n">counties</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">topo_feature</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">us_10m</span><span class="o">.</span><span class="n">url</span><span class="p">,</span> <span class="s1">&#39;counties&#39;</span><span class="p">)</span>
+<span class="n">source</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">unemployment</span><span class="o">.</span><span class="n">url</span>
+
+<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">counties</span><span class="p">)</span><span class="o">.</span><span class="n">mark_geoshape</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;rate:Q&#39;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Legend</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Rate&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;%&quot;</span><span class="p">))</span>
+<span class="p">)</span><span class="o">.</span><span class="n">transform_lookup</span><span class="p">(</span>
+    <span class="n">lookup</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">,</span>
+    <span class="n">from_</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">LookupData</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;rate&#39;</span><span class="p">])</span>
+<span class="p">)</span><span class="o">.</span><span class="n">project</span><span class="p">(</span>
+    <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;albersUsa&#39;</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Unemployment rate in the U.S.&quot;</span><span class="p">,</span>
+<span class="c1">#     width=500,</span>
+<span class="c1">#     height=300</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="altair-viz-38fd95f7d24443a58fd6fe440d8101eb"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-38fd95f7d24443a58fd6fe440d8101eb") {
+      outputDiv = document.getElementById("altair-viz-38fd95f7d24443a58fd6fe440d8101eb");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"width": 600, "height": 400, "autosize": "pad", "config": {"padding": 10, "geoshape": {"fill": "#D9D9D6", "stroke": "#2B3E4B", "strokeWidth": 0.5}, "arc": {"fill": "#282828"}, "area": {"fill": "#282828"}, "axisBand": {"grid": false}, "axisBottom": {"domain": false, "domainColor": "black", "domainWidth": 3, "grid": true, "gridColor": "#C9C9C9", "gridWidth": 1, "labelFontSize": 12, "labelFont": "Helvetica", "labelPadding": 8, "labelAngle": 0, "tickColor": "#282828", "tickSize": 10, "titleFontSize": 12, "titlePadding": 10, "titleFont": "Helvetica", "title": ""}, "axisLeft": {"domainColor": "#282828", "domainWidth": 1, "gridColor": "#C9C9C9", "gridWidth": 1, "labelFontSize": 12, "labelFont": "Helvetica", "labelPadding": 8, "tickColor": "#282828", "tickSize": 10, "tickCount": 10, "ticks": true, "titleFontSize": 14, "titleFontStyle": "italic", "titlePadding": 10, "titleFont": "Helvetica", "titleAngle": 0, "titleX": -70, "titleY": -18, "titleAnchor": "start"}, "axisRight": {"domainColor": "#282828", "domainWidth": 1, "gridColor": "#C9C9C9", "gridWidth": 1, "labelFontSize": 12, "labelFont": "Helvetica", "labelPadding": 4, "tickColor": "#282828", "tickSize": 10, "ticks": true, "titleFontSize": 12, "titlePadding": 10, "titleFont": "Helvetica"}, "axisTop": {"domain": false, "domainColor": "black", "domainWidth": 3, "grid": true, "gridColor": "#C9C9C9", "gridWidth": 1, "labelFontSize": 12, "labelFont": "Helvetica", "labelPadding": 4, "tickColor": "#282828", "tickSize": 10, "titleFontSize": 12, "titlePadding": 10, "titleFont": "Helvetica"}, "background": "#FFFEFE", "group": {"fill": "#FFFAFA"}, "legend": {"labelFontSize": 12, "labelFont": "Helvetica", "labelLimit": 500, "padding": 5, "symbolSize": 200, "symbolType": "square", "titleFontSize": 18, "titlePadding": 5, "titleFont": "Helvetica", "titleLimit": 400}, "line": {"color": "#282828", "stroke": "#282828", "strokeWidth": 3}, "rule": {"color": "#282828", "stroke": "#282828", "strokeWidth": 3}, "tick": {"color": "#282828", "stroke": "#282828", "strokeWidth": 1}, "trail": {"color": "#282828", "stroke": "#282828", "strokeWidth": 0, "size": 5}, "path": {"stroke": "#282828", "strokeWidth": 0.5}, "point": {"filled": true}, "rect": {"fill": "#A20C4B", "opacity": 0.3}, "range": {"category": ["#dc0d7a", "#02a3cd", "#e4a100", "#dc0d12", "#0DDC6F", "#074a7e", "#e46800", "#aa3594", "#a20c4b"], "diverging": ["#dc0d12", "#e9686b", "#fbe1e1", "#dff4f9", "#81d1e6", "#03a3cd"], "heatmap": ["#77f9ff", "#50dbff", "#18bef5", "#01a2d8", "#0087bb", "#006c9e", "#005383"]}, "symbol": {"opacity": 1, "shape": "circle", "size": 40, "strokeWidth": 1}, "style": {"bar": {"binSpacing": 2, "fill": "#282828", "stroke": false}, "text": {"font": "Helvetica", "fontSize": 12, "align": "right", "fontWeight": 100, "size": 10}}, "title": {"anchor": "start", "fontSize": 18, "fontWeight": 800, "font": "Helvetica", "offset": 10}, "view": {"stroke": false, "padding": 15}, "header": {"fontWeight": 400, "labelFontSize": 12, "labelFont": "Helvetica", "titleFontSize": 14, "titleFont": "Helvetica", "title": " ", "titleBaseline": "bottom", "titleOffset": -30}}, "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json", "format": {"feature": "counties", "type": "topojson"}}, "mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "rate", "legend": {"format": "%", "title": "Rate"}}}, "projection": {"type": "albersUsa"}, "title": "Unemployment rate in the U.S.", "transform": [{"lookup": "id", "from": {"data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/unemployment.tsv"}, "key": "id", "fields": ["rate"]}}], "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
 </div>
 </div>
 
@@ -342,7 +434,7 @@ Map Colors</p>
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     
