@@ -70,7 +70,6 @@ The color **red** also tends to be seen as a negative in Western societies espec
 </div>
 <small class="text-muted">Click on the color squares to copy the list of hex codes.</small>
 
-
 ## Examples
 
 Let's go over some ways we could visualize this dataset. Remember, there is not a right answer here. Data can be visualized in many ways and each of them emphasizes and downplays certain aspects of your data. What you want to tell with your data is your choice but please remember to be responsible and honest.
@@ -81,26 +80,13 @@ The simplest chart we can create with our data as it is is a bar chart. In this 
 
 This is not particularly useful, as we are highlighting one of the two possible positive answers ('some' and 'a lot'). It is not clear if the sum of both "Some" and "A lot" is larger than the sum of "Not at all" and "Not much". 
 
-````{tab} Red
 <iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="chart" id="datawrapper-chart-hP6dc" src="https://datawrapper.dwcdn.net/hP6dc/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
-````
-````{tab} Yellow
-<iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="chart" id="datawrapper-chart-GeJ3z" src="https://datawrapper.dwcdn.net/GeJ3z/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script>
-````
 
 This type of chart could be useful if there is one category that is clearly much larger than the other three for most groups. Take a look:
 
-````{tab} Red
-<iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="chart" id="datawrapper-chart-HdKTe" src="https://datawrapper.dwcdn.net/HdKTe/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script>
-````
-
-````{tab} Yellow
 <iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="chart" id="datawrapper-chart-EUNIz" src="https://datawrapper.dwcdn.net/EUNIz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
-````
 
 This logic is true for [horizontal bar charts too](#horizontal-bar-charts).
 
@@ -109,15 +95,9 @@ Pie charts emphasize the idea of a section _being part of a whole_. In this case
 
 Pie charts sections, however, can be hard to interpret if there are too many sections or if these sections are not common fractions like 1/3, 1/2, 1/4, etc. It's easy to tell when a section is one quarter or 25% of a pie. It's harder to tell when it is 17%. 
 
-````{tab} Red
 <iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="chart" id="datawrapper-chart-Hju43" src="https://datawrapper.dwcdn.net/Hju43/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="299"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
-````
 
-````{tab} Yellow
-<iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="chart" id="datawrapper-chart-CA87U" src="https://datawrapper.dwcdn.net/CA87U/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="299"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script>
-````
 
 ### Diverging stacked bars
 
@@ -125,17 +105,7 @@ Another common way to visualize this type of data is using diverging stacked bar
 
 First two tabs showing off defining a function.
 
-````{tab} Red
-<strong><span class="chart-title">How much, if at all, do you care about the debate over the use of the word "data" as a singular or plural noun?</span></strong>
-```{figure} /_static/images/diverging-stacked-bars-rdbu.png
----
-name: diverging-stacked-bars-rdbu
-alt: A diverging stacked bar chart created in excel.
----
-Red-blue diverging stacked bar chart.
-```
-````
-````{tab} Yellow
+
 <strong><span class="chart-title">How much, if at all, do you care about the debate over the use of the word "data" as a singular or plural noun?</span></strong>
 ```{figure} /_static/images/diverging-stacked-bars-yebu.png
 ---
@@ -144,7 +114,6 @@ alt: A diverging stacked bar chart created in excel.
 ---
 Yellow-blue diverging stacked bar chart.
 ```
-````
 
 
 This takes care of our regular bar chart problem where you could not tell right away if the aggregate of "blues" was greater than the aggregate of the "reds" (or "yellows" if you are using our other scale). Kind of. 
@@ -161,15 +130,9 @@ If you decide you want to try to use this type of charts we have included an exc
 
 Our last example is stacked bar charts. Stacked bar charts are, as the name suggests, charts that stack bars on top of (or next to in the case of horizontal charts) each other. Instead of each group (in this case our income groups) having 5 bars displaying the share of each possible answer they have one bar going from 0 too 100% with four or five sections differentiated by color. 
 
-````{tab} Red
 <iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="Stacked Bars" id="datawrapper-chart-l8nJA" src="https://datawrapper.dwcdn.net/l8nJA/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="291"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
-````
 
-````{tab} Yellow
-<iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="Stacked Bars" id="datawrapper-chart-KTlJ2" src="https://datawrapper.dwcdn.net/KTlJ2/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="291"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script>
-````
 
 This has the advantage of making our chart more compact. It also, like pie charts, emphasize each section/answer is a "part of a whole". It is also easier to tell "which part is bigger" (blues vs red/yellows) if you add a label at the 50% mark. If either section crosses said mark you know it holds "the majority". 
 
@@ -196,12 +159,5 @@ This has the advantage of making our chart more compact. It also, like pie chart
 ### Horizontal bar charts
 See [bar charts](#bar-charts) section.
 
-````{tab} Red
-<iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="Grouped Bars" id="datawrapper-chart-5wcjq" src="https://datawrapper.dwcdn.net/5wcjq/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="706"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script>
-````
-
-````{tab} Yellow
 <iframe title="How much, if at all, do you care about the debate over the use of the word &quot;data&quot; as a singular or plural noun?" aria-label="Grouped Bars" id="datawrapper-chart-iuoJR" src="https://datawrapper.dwcdn.net/iuoJR/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="706"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
-````
